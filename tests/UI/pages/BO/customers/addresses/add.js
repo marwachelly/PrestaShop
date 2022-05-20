@@ -51,7 +51,7 @@ class AddAddress extends BOBasePage {
     if (await this.elementVisible(page, this.customerEmailInput, 2000)) {
       await this.setValue(page, this.customerEmailInput, addressData.email);
     }
-    await this.setValue(page, this.customerAddressdniInput, addressData.dni);
+   // await this.setValue(page, this.customerAddressdniInput, '');
     await this.setValue(page, this.customerAddressAliasInput, addressData.alias);
     await this.setValue(page, this.customerAddressFirstNameInput, addressData.firstName);
     await this.setValue(page, this.customerLastNameInput, addressData.lastName);
